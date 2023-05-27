@@ -1,64 +1,152 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Aniruddh Mutnuru" />
-    <title>Aniruddh's Personal Website</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <section id="navbar">
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#photography">Photography</a>
-        <a href="contactInfo.html">Contact Me</a>
-      </nav>
-    </section>
-    <br />
-    <table cellspacing="10">
-      <tr>
-        <td>
-          <img
-            src="images/Ani prof pic.png"
-            alt="Picture of Aniruddh Mutnuru"
-            width="200"
-            height="200"
-          />
-        </td>
-        <td>
-          <h1>Aniruddh Mutnuru</h1>
-          <p>
-            <em
-              ><a href="https://www.kathakar.media">Kathakar Podcast</a>
-              Co-Founder and Co-Host</em
-            >
-            <br />
-            <em
-              ><a href="https://www.fremontdebateacademy.org/leadership"
-                >Fremont Debate Academy</a
-              >
-              (FDA) Director of Outreach</em
-            >
-          </p>
-        </td>
-      </tr>
-    </table>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Aniruddh Mutnuru" />
+  <title>Aniruddh's Personal Website</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet" />
+</head>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hello! My name is Aniruddh Mutnuru and I am currently a freshman
-        computer science student at the University of Maryland, College Park. I
-        am interested in gaining more experience with CS and one way I thought
-        of doing so is to combine my passion for CS and photography, hence this
-        photography portfoilio website. Enjoy the photos! :-)
-      </p>
-    </section>
+<style>
+  h1 {
+    font-weight: 700;
+    font-size: 300%;
+    position: relative;
+    color: #00adb5;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 70px;
+  }
+</style>
 
-    <section id="photography">
-      <h2><a href="mutnuruPhotography.html">Mutnuru Photography</a></h2>
-    </section>
-  </body>
+<body>
+  <section id="navbar">
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#photography">Photography</a>
+      <a href="contactInfo.html">Contact Me</a>
+    </nav>
+  </section>
+  <br />
+  <table cellspacing="10">
+    <tr>
+      <td>
+        <img src="images/Ani prof pic.png" alt="Picture of Aniruddh Mutnuru" width="200" height="200" />
+      </td>
+      <td>
+        <h1>Aniruddh Mutnuru</h1>
+        <p>
+          <em><a style="text-decoration: underline; color: #00adb5" href="https://www.kathakar.media">Kathakar
+              Podcast</a>
+            Co-Founder and Co-Host</em>
+          <br />
+          <em><a style="text-decoration: underline; color: #00adb5"
+              href="https://www.fremontdebateacademy.org/leadership">Fremont Debate Academy</a>
+            (FDA) Director of Outreach</em>
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align: center">
+      Hello! My name is Aniruddh Mutnuru and I am currently a freshman
+      computer science student at the University of Maryland, College Park. I
+      am interested in gaining more experience with CS and one way I thought
+      of doing so is to combine my passion for CS and photography, hence this
+      photography portfoilio website. Enjoy the photos! :-)
+    </p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p style="text-align: center">
+      Here are some of the things that I have worked on in the past and
+      on-going projects!
+    </p>
+  </section>
+
+  <section id="photography">
+    <h2>
+      <a style="text-decoration: underline; color: #00adb5" href="mutnuruPhotography.html">Mutnuru Photography</a>
+    </h2>
+  </section>
+
+  <section id="miscellaneous">
+    <h2>Miscellaneous</h2>
+    <p style="text-align: center">
+      Non-professional things I have completed! :-)
+    </p>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="slide-content fade">
+        <a href="https://open.spotify.com/track/6x0vZ7RquASztspbDuCAtM?si=17622ab005904932"><img
+            src="images/waiting-cover.png" style="width:100%"></a>
+        <div class="caption-text">My song!</div>
+      </div>
+
+      <div class="slide-content fade">
+        <a
+          href="https://www.amazon.com/Men-Tower-Aniruddh-Mutnuru-ebook/dp/B0B9LTBM5L/ref=sr_1_1?crid=1GBD6H04WFQ2V&keywords=aniruddh+mutnuru&qid=1685170051&s=digital-text&sprefix=aniruddh+mutnuru%2Cdigital-text%2C61&sr=1-1"><img
+            src="images/men-of-the-tower.jpg" style="width:100%"></a>
+        <div class="caption-text">My book!</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <!-- MOVE JAVASCRIPT SOMEWHERE ELSE!!!!! -->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide-content");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+  </section>
+</body>
+
 </html>
