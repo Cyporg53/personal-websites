@@ -135,3 +135,27 @@ nav a:hover {
         opacity: 1
     }
 }
+
+.contact-text a {
+    text-decoration: none;
+    color: inherit;
+    margin: 3px;
+    margin-bottom: 0px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.contact-text a:hover{
+    cursor: pointer;
+    color: #00adb5;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222831;
+        color: #EEEEEE;
+        font-family: "Josefin Sans", sans-serif; 
+    }
+}
