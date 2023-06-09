@@ -11,8 +11,8 @@ h2 {
 }
 
 h3 {
-    color: #00adb5;
-    font-size: 225%;
+    color: inherit;
+    font-size: 150%;
     text-align: center;
 }
 
@@ -158,4 +158,52 @@ nav a:hover {
         color: #EEEEEE;
         font-family: "Josefin Sans", sans-serif; 
     }
+
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #717171;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active,
+    .dot:hover {
+        background-color: #bbb;
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio-content {
+    margin: 10px;
+}
+
+.outer-ul {
+    background-color: #00adb5;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px; 
+}
+
+ul {
+    background-color: #00adb5;
+}
+
+li {
+    margin: 10px;
+}
+
+b {
+    font-weight: bolder
 }
